@@ -1,13 +1,13 @@
 FROM node:16
 
-EXPOSE 3001
+EXPOSE 3000
 
-WORKDIR /app/back-end
+WORKDIR /app/front-end
 
 ADD node_modules.tar.gz .
 
 COPY . .
 
-ENTRYPOINT [ "npm install" ]
+ENTRYPOINT [ "npm" ]
 
-CMD ["npm start"]
+CMD [ "start" ]

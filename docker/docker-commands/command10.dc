@@ -1,1 +1,1 @@
-docker build -t todofrontend -f ./docker/todo-app/front-end/Dockerfile .
+docker build -t todofrontend $PWD/todo-app/front-end
